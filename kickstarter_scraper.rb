@@ -23,6 +23,8 @@ require 'pry'
       :percent_funded => project.css("ul.project-stats li.first.funded strong").text.gsub("%","").to_i
     }
     end
+
+    create_project_hash
   end
     # html = File.open('fixtures/kickstarter.html')
     # kickstarter = Nokogiri::HTML(html)
