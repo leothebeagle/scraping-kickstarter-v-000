@@ -1,6 +1,9 @@
 require 'nokogiri'
 require 'pry'
 
+#projects: kickstarter.html("li.projecs.grid_4")
+
+
   def create_project_hash
     html = File.open('fixtures/kickstarter.html')
     kickstarter = Nokogiri::HTML(html)
