@@ -2,6 +2,9 @@ require 'nokogiri'
 require 'pry'
 
 #projects: kickstarter.html("li.projecs.grid_4")
+#title: project.css("h2.bbcard_name strong a")
+
+
 
 
   def create_project_hash
