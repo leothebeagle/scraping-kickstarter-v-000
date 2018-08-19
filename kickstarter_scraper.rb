@@ -11,7 +11,7 @@ require 'pry'
   def create_project_hash
     html = File.open('fixtures/kickstarter.html')
     kickstarter = Nokogiri::HTML(html)
-    binding.pry
+  
   end
     # html = File.open('fixtures/kickstarter.html')
     # kickstarter = Nokogiri::HTML(html)
