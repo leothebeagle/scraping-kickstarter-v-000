@@ -1,4 +1,5 @@
 require 'nokogiri'
+require 'pry'
 
   def create_project_hash
     html = File.open('fixtures/kickstarter.html')
