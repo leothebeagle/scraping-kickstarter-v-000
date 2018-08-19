@@ -1,7 +1,7 @@
 require 'nokogiri'
 require 'pry'
 
-#projects: kickstarter.html("li.projecs.grid_4")
+#projects: kickstarter.css("li.projecs.grid_4")
 #title: project.css("h2.bbcard_name strong a")
 #image_link: project.css("div.project-thumbnail a img").attribute("src").value
 #description: project.css("p.bbcard_blurb").text
@@ -11,7 +11,10 @@ require 'pry'
   def create_project_hash
     html = File.open('fixtures/kickstarter.html')
     kickstarter = Nokogiri::HTML(html)
-  
+
+    projects = {}
+
+    kickstarter.css()
   end
     # html = File.open('fixtures/kickstarter.html')
     # kickstarter = Nokogiri::HTML(html)
