@@ -8,12 +8,6 @@ require 'pry'
 #location: project.css("ul.project-meta li span.location-name").text
 #percent_funded: project.css("ul.project-stats li.first.funded strong").text
 
-
-
-
-
-
-
   def create_project_hash
     html = File.open('fixtures/kickstarter.html')
     kickstarter = Nokogiri::HTML(html)
